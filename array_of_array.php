@@ -2,16 +2,24 @@
        $judul = "Biodata"; 
      
        $biodata = array(
-    
-        "id"=>1,
-        "name"=>"Alex",
-        "age"=>20,
-        "address"=>array(
-            "city"=>"Jakarta",
-            "country"=>"Indonesia"
-        )
-        
-        
+        array(
+            "id"=>1,
+            "name"=>"Alex",
+            "age"=>20,
+            "address"=>array(
+                "city"=>"Jakarta",
+                "country"=>"Indonesia"
+            )  
+        ),
+            array(
+                "id"=>2,
+                "name"=>"Bob",
+                "age"=>20,
+                "address"=>array(
+                    "city"=>"Jakarta",
+                    "country"=>"Indonesia"
+                )
+                ),        
     );
 
     
@@ -31,11 +39,11 @@
         </h2>
         <?php 
            
-             echo "Id :".$biodata["id"]."<br>";
-             echo "Name :".$biodata["name"]."<br>";
-             echo "Age :".$biodata["age"]."<br>";
-             echo "City :".$biodata["address"]["city"]."<br>";
-             echo "Country :".$biodata["address"]["country"]."<br>";
+             echo "Id :".$biodata[0]["id"]."<br>";
+             echo "Name :".$biodata[0]["name"]."<br>";
+             echo "Age :".$biodata[0]["age"]."<br>";
+             echo "City :".$biodata[0]["address"]["city"]."<br>";
+             echo "Country :".$biodata[0]["address"]["country"]."<br>";
             
         
         ?>
