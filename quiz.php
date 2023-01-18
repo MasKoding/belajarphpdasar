@@ -60,8 +60,8 @@ $biodata = array(
     <h2>
         <?php echo $judul; ?>
     </h2>
-    <table class="table">
-        <thead>
+    <table class="table table-dark table-hover">
+        <thead> 
             <tr>
                 <th scope="col">Id</th>
                 <th scope="col">Nama</th>
